@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    android:background="@color/colorwhite"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="411dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="70dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/amountpaybill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Name:"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/amountpaydate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="51dp"
+            android:text="Email:"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amountpaybill" />
+
+        <TextView
+            android:id="@+id/paybillbtn"
+            android:layout_width="129dp"
+            android:layout_height="43dp"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="100dp"
+            android:text="Pay Bill"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amountpaybill" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cc"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="246dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="5dp"
+        android:text="Enter bill expenses"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69" />
+    <EditText
+        android:id="@+id/billAmount"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:hint="Bill"
+        android:inputType="number"
+        android:textColor="@color/colorwhite"
+        android:textColorHint="@color/colorwhite"
+        app:layout_constraintBottom_toTopOf="@+id/billdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/billdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="14dp"
+        android:textColor="@color/colorwhite"
+        android:ems="10"
+        android:hint="Last Day to day"
+        android:inputType="date"
+        android:textColorHint="@color/colorwhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/billAmount" />
+
+    <Button
+        android:id="@+id/billbtngen"
+        android:layout_width="126dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="152dp"
+        android:text="Generate"
+        android:textColor="@color/black"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/billdate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

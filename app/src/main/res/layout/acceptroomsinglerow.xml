@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:background="@color/colorwhite"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="411dp"
+        android:layout_marginTop="70dp"
+        android:layout_height="159dp"
+        android:background="@color/colorwhite"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/roomidrequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Room Id:"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/emailrequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="51dp"
+            android:text="Email:"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roomidrequest" />
+
+        <TextView
+            android:id="@+id/tick"
+            android:layout_width="129dp"
+            android:layout_height="43dp"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="100dp"
+            android:text="Accept"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roomidrequest" />
+
+        <TextView
+            android:id="@+id/cross"
+            android:layout_width="129dp"
+            android:layout_height="43dp"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="100dp"
+            android:text="Reject"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roomidrequest" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
